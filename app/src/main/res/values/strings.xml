@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fruits</string>
+    <string name="mainphrase">let\'s recognize!</string>
+    <string name="recognize">recognize</string>
+    <string name="uploadphoto">upload photo</string>
+    <string name="result">result:</string>
+    <string name="predictionText">The prediction is:</string>
+</resources>
