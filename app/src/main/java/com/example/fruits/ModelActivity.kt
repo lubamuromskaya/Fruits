@@ -208,9 +208,6 @@ class ModelActivity : AppCompatActivity() {
         val port = 9999
 
         println("SIZE: $imageBytesSize")
-
-        //val bytes = convertStringToConstByteArray(imageBytesSize.toString(), 4096)
-
         println("connecting...")
 
         Socket("192.168.0.123", port).use {
@@ -237,7 +234,6 @@ class ModelActivity : AppCompatActivity() {
                     println("OK reading answer...")
                     val input = it.readBytes()
                     answer = String(input)
-                    //answer = BufferedReader(InputStreamReader(it)).readLine()
                 }
             } catch (e: IOException) {
                 println("Can't get input stream");
@@ -261,7 +257,4 @@ class ModelActivity : AppCompatActivity() {
         private const val REQUEST_CODE_PERMISSIONS = 10
         private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
     }
-
-
-
 }
